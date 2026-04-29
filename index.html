@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Farmer's Assistance — AI-powered mobile app for smart farming. Disease detection, irrigation, fertilizer, yield, crop & market insights powered by machine learning." />
+  <title>Farmer's Assistance — AI-Powered Smart Farming App</title>
+  <link rel="icon" href="assets/app_icon/app_icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="src/css/style.css" />
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand">
+        <img src="assets/app_icon/app_icon.png" alt="Logo" class="nav-logo" />
+        <span class="nav-name">Farmer's Assistance</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#gallery">Screenshots</a></li>
+        <li><a href="#tech">Technology</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="#cta" class="btn btn-primary">Get the App</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="nav-mobile-menu">
+  <button class="nav-mobile-close">&#10005;</button>
+  <a href="#features">Features</a>
+  <a href="#how-it-works">How It Works</a>
+  <a href="#gallery">Screenshots</a>
+  <a href="#tech">Technology</a>
+  <a href="#cta" class="btn btn-primary">Get the App</a>
+</div>
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-particles"></div>
+  <div class="container">
+    <div class="hero-inner">
+
+      <!-- Left Content -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          AI-Powered Agriculture &nbsp;·&nbsp; Flutter &nbsp;·&nbsp; FastAPI
+        </div>
+        <h1 class="hero-title">
+          Smart Farming
+          <span class="accent">in Your Pocket</span>
+        </h1>
+        <p class="hero-subtitle">
+          Farmer's Assistance puts 8 powerful AI tools at your fingertips — from crop disease detection to real-time market price predictions. Make smarter farming decisions, every single day.
+        </p>
+        <div class="hero-actions">
+          <a href="#cta" class="btn btn-primary" style="font-size:1.05rem; padding:16px 36px;">
+            <i class="fa-solid fa-download"></i>&nbsp; Download Free
+          </a>
+          <a href="#features" class="btn btn-outline" style="color:white; border-color:rgba(255,255,255,0.4); font-size:1.05rem; padding:16px 36px;">
+            <i class="fa-solid fa-play"></i>&nbsp; Explore Features
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num"><span data-target="8" data-suffix="">0</span>+</div>
+            <div class="hero-stat-label">AI Features</div>
+          </div>
+          <div>
+            <div class="hero-stat-num"><span data-target="96" data-suffix="">0</span>%</div>
+            <div class="hero-stat-label">Detection Accuracy</div>
+          </div>
+          <div>
+            <div class="hero-stat-num"><span data-target="24" data-suffix="">0</span>/7</div>
+            <div class="hero-stat-label">AI Chatbot Support</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Visual -->
+      <div class="hero-visual">
+        <div class="hero-glow"></div>
+        <div class="phone-showcase">
+          <div class="phone-frame side side-left">
+            <img src="assets/image/disease_detection_result.jpeg" alt="Disease Detection" loading="lazy" />
+          </div>
+          <div class="phone-frame main">
+            <img src="assets/image/home_dashboard.jpeg" alt="Home Dashboard" />
+          </div>
+          <div class="phone-frame side side-right">
+            <img src="assets/image/weather_forecast.jpeg" alt="Weather Forecast" loading="lazy" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATS STRIP ===== -->
+<section id="stats-strip">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item fade-up">
+        <div class="stat-number"><span data-target="100" data-suffix="">0</span><span>+</span></div>
+        <div class="stat-label">Countries Supported</div>
+      </div>
+      <div class="stat-item fade-up">
+        <div class="stat-number"><span data-target="7" data-suffix="">0</span><span>-Day</span></div>
+        <div class="stat-label">Weather Forecast</div>
+      </div>
+      <div class="stat-item fade-up">
+        <div class="stat-number"><span data-target="10" data-suffix="">0</span><span>+</span></div>
+        <div class="stat-label">Crops Covered</div>
+      </div>
+      <div class="stat-item fade-up">
+        <div class="stat-number"><span>&#10003;</span></div>
+        <div class="stat-label">Free to Download</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FEATURES SECTION ===== -->
+<section id="features">
+  <div class="container">
+    <div class="features-header fade-up">
+      <span class="section-badge">&#127807; Core Features</span>
+      <h2 class="section-title">8 Powerful AI Tools<br><span>Built for Real Farmers</span></h2>
+      <p class="section-desc">Each feature is powered by trained machine learning models and live weather data — giving you actionable, accurate farming advice in seconds.</p>
+    </div>
+
+    <!-- Feature Tabs -->
+    <div class="features-tabs fade-up">
+      <button class="feat-tab active" data-target="feat-disease"><i class="fa-solid fa-microscope"></i> Disease</button>
+      <button class="feat-tab" data-target="feat-irrigation"><i class="fa-solid fa-droplet"></i> Irrigation</button>
+      <button class="feat-tab" data-target="feat-fertilizer"><i class="fa-solid fa-seedling"></i> Fertilizer</button>
+      <button class="feat-tab" data-target="feat-yield"><i class="fa-solid fa-chart-bar"></i> Yield</button>
+      <button class="feat-tab" data-target="feat-crop"><i class="fa-solid fa-wheat-awn"></i> Crop Rec.</button>
+      <button class="feat-tab" data-target="feat-market"><i class="fa-solid fa-coins"></i> Market</button>
+      <button class="feat-tab" data-target="feat-weather"><i class="fa-solid fa-cloud-sun"></i> Weather</button>
+      <button class="feat-tab" data-target="feat-chatbot"><i class="fa-solid fa-robot"></i> AI Chat</button>
+    </div>
+
+    <!-- Feature 1: Disease Detection -->
+    <div class="feature-showcase active" id="feat-disease">
+      <div class="feat-info fade-up">
+        <div class="feat-icon-wrap" style="background:linear-gradient(135deg,#ff6b6b22,#ff6b6b44);"><i class="fa-solid fa-microscope"></i></div>
+        <h3 class="feat-title">Crop Disease Detection</h3>
+        <p class="feat-desc">Upload a leaf photo and our ResNet50-based AI diagnoses the disease instantly. A Grad-CAM heatmap visually highlights the affected areas, so you can verify the AI's reasoning and act with confidence.</p>
+        <div class="feat-points">
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Supports JPG, PNG, JPEG — up to 10 MB</div>
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Returns disease name with confidence score</div>
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Grad-CAM heatmap shows exactly where disease was detected</div>
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Works in offline-poor conditions — results in seconds</div>
+        </div>
+        <a href="#cta" class="btn btn-primary">Try It Now</a>
+      </div>
+      <div class="feat-screenshots">
+        <div class="feat-screen-card" data-lightbox="assets/image/disease_detection_input.jpeg" style="cursor:zoom-in;">
+          <img src="assets/image/disease_detection_input.jpeg" alt="Disease Detection Input" loading="lazy" />
+          <div class="feat-screen-label">Upload Leaf Photo</div>
+        </div>
+        <div class="feat-screen-card" data-lightbox="assets/image/disease_detection_result.jpeg" style="cursor:zoom-in;">
+          <img src="assets/image/disease_detection_result.jpeg" alt="Disease Detection Result" loading="lazy" />
+          <div class="feat-screen-label">AI Diagnosis + Heatmap</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 2: Smart Irrigation -->
+    <div class="feature-showcase" id="feat-irrigation">
+      <div class="feat-info fade-up">
+        <div class="feat-icon-wrap" style="background:linear-gradient(135deg,#3498db22,#3498db44);"><i class="fa-solid fa-droplet"></i></div>
+        <h3 class="feat-title">Smart Irrigation Advisor</h3>
+        <p class="feat-desc">Predict whether your crop needs irrigation right now. Our ML model weighs soil type, crop growth stage, soil moisture, and live weather to give a clear Yes/No decision with confidence score and feature importance breakdown.</p>
+        <div class="feat-points">
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Auto-fills temperature & humidity from GPS weather</div>
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Covers Wheat, Chilli, Potato, Carrot, Tomato</div>
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>8 growth stages from Germination to Harvest</div>
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Shows which factors drove the irrigation decision</div>
+        </div>
+        <a href="#cta" class="btn btn-primary">Try It Now</a>
+      </div>
+      <div class="feat-screenshots">
+        <div class="feat-screen-card" data-lightbox="assets/image/smart_irrigation_input.jpeg" style="cursor:zoom-in;">
+          <img src="assets/image/smart_irrigation_input.jpeg" alt="Irrigation Input" loading="lazy" />
+          <div class="feat-screen-label">Enter Soil Conditions</div>
+        </div>
+        <div class="feat-screen-card" data-lightbox="assets/image/smart_irrigation_result.jpeg" style="cursor:zoom-in;">
+          <img src="assets/image/smart_irrigation_result.jpeg" alt="Irrigation Result" loading="lazy" />
+          <div class="feat-screen-label">Irrigation Decision</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 3: Fertilizer -->
+    <div class="feature-showcase" id="feat-fertilizer">
+      <div class="feat-info fade-up">
+        <div class="feat-icon-wrap" style="background:linear-gradient(135deg,#27ae6022,#27ae6044);"><i class="fa-solid fa-seedling"></i></div>
+        <h3 class="feat-title">Fertilizer Recommendation</h3>
+        <p class="feat-desc">Enter your soil's NPK levels, pH, and crop type, and the AI recommends the precise fertilizer — Urea, DAP, MOP, or compound NPK blends. Weather data auto-fills to eliminate manual entry errors.</p>
+        <div class="feat-points">
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Analyzes Nitrogen, Phosphorus, and Potassium levels</div>
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Accounts for soil pH and current rainfall</div>
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>One-tap weather refresh for temperature & rainfall</div>
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Feature importance chart explains the recommendation</div>
+        </div>
+        <a href="#cta" class="btn btn-primary">Try It Now</a>
+      </div>
+      <div class="feat-screenshots">
+        <div class="feat-screen-card" data-lightbox="assets/image/fertilizer_recommendation_input.jpeg" style="cursor:zoom-in;">
+          <img src="assets/image/fertilizer_recommendation_input.jpeg" alt="Fertilizer Input" loading="lazy" />
+          <div class="feat-screen-label">Enter Soil Data</div>
+        </div>
+        <div class="feat-screen-card" data-lightbox="assets/image/fertilizer_recommendation_result.jpeg" style="cursor:zoom-in;">
+          <img src="assets/image/fertilizer_recommendation_result.jpeg" alt="Fertilizer Result" loading="lazy" />
+          <div class="feat-screen-label">Fertilizer Recommendation</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 4: Yield Estimation -->
+    <div class="feature-showcase" id="feat-yield">
+      <div class="feat-info fade-up">
+        <div class="feat-icon-wrap" style="background:linear-gradient(135deg,#f39c1222,#f39c1244);"><i class="fa-solid fa-chart-bar"></i></div>
+        <h3 class="feat-title">Yield Estimation</h3>
+        <p class="feat-desc">Forecast your expected harvest in tonnes per hectare. Select your crop, country, and pesticide usage — the model accounts for rainfall and temperature to give a High / Medium / Low yield classification with predicted t/ha value.</p>
+        <div class="feat-points">
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Covers 10 major crops: Rice, Maize, Wheat, Soybeans & more</div>
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>100+ country regions supported</div>
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Output in t/ha — industry-standard unit</div>
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Color-coded yield class: High / Medium / Low</div>
+        </div>
+        <a href="#cta" class="btn btn-primary">Try It Now</a>
+      </div>
+      <div class="feat-screenshots">
+        <div class="feat-screen-card" data-lightbox="assets/image/yield_estimate_input.jpeg" style="cursor:zoom-in;">
+          <img src="assets/image/yield_estimate_input.jpeg" alt="Yield Input" loading="lazy" />
+          <div class="feat-screen-label">Enter Crop Details</div>
+        </div>
+        <div class="feat-screen-card" data-lightbox="assets/image/yield_estimate_result.jpeg" style="cursor:zoom-in;">
+          <img src="assets/image/yield_estimate_result.jpeg" alt="Yield Result" loading="lazy" />
+          <div class="feat-screen-label">Predicted Yield (t/ha)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 5: Crop Recommendation -->
+    <div class="feature-showcase" id="feat-crop">
+      <div class="feat-info fade-up">
+        <div class="feat-icon-wrap" style="background:linear-gradient(135deg,#1abc9c22,#1abc9c44);"><i class="fa-solid fa-wheat-awn"></i></div>
+        <h3 class="feat-title">Crop Recommendation</h3>
+        <p class="feat-desc">Not sure what to plant this season? Enter your soil's NPK readings and the app auto-fills current weather to match your conditions against the best-suited crop — from Jute and Rice to Cotton and Mungbean.</p>
+        <div class="feat-points">
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Weather data (temperature, humidity, rainfall) auto-loads</div>
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Matches soil nutrient profile to ideal crop</div>
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>One-tap weather refresh button</div>
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Confidence score included with recommendation</div>
+        </div>
+        <a href="#cta" class="btn btn-primary">Try It Now</a>
+      </div>
+      <div class="feat-screenshots">
+        <div class="feat-screen-card" data-lightbox="assets/image/crop_recommendation_input.jpeg" style="cursor:zoom-in;">
+          <img src="assets/image/crop_recommendation_input.jpeg" alt="Crop Rec Input" loading="lazy" />
+          <div class="feat-screen-label">Enter Soil & Weather</div>
+        </div>
+        <div class="feat-screen-card" data-lightbox="assets/image/crop_recommendation_result.jpeg" style="cursor:zoom-in;">
+          <img src="assets/image/crop_recommendation_result.jpeg" alt="Crop Rec Result" loading="lazy" />
+          <div class="feat-screen-label">Best Crop Match</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 6: Market Trends -->
+    <div class="feature-showcase" id="feat-market">
+      <div class="feat-info fade-up">
+        <div class="feat-icon-wrap" style="background:linear-gradient(135deg,#f1c40f22,#f1c40f44);"><i class="fa-solid fa-coins"></i></div>
+        <h3 class="feat-title">Market Trends & Price Prediction</h3>
+        <p class="feat-desc">Forecast commodity prices before you sell. Select your Division → District → Market from cascading dropdowns, pick the commodity and date, and get a predicted price with market and currency context.</p>
+        <div class="feat-points">
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Bangladesh market data: Division → District → Market</div>
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Retail & Wholesale price type selection</div>
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Date picker range from 2020 to 2030</div>
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>GPS coordinates auto-fill when market is selected</div>
+        </div>
+        <a href="#cta" class="btn btn-primary">Try It Now</a>
+      </div>
+      <div class="feat-screenshots">
+        <div class="feat-screen-card" data-lightbox="assets/image/market_trends_input.jpeg" style="cursor:zoom-in;">
+          <img src="assets/image/market_trends_input.jpeg" alt="Market Input" loading="lazy" />
+          <div class="feat-screen-label">Select Market & Commodity</div>
+        </div>
+        <div class="feat-screen-card" data-lightbox="assets/image/market_trends_result.jpeg" style="cursor:zoom-in;">
+          <img src="assets/image/market_trends_result.jpeg" alt="Market Result" loading="lazy" />
+          <div class="feat-screen-label">Price Forecast (BDT)</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 7: Weather -->
+    <div class="feature-showcase" id="feat-weather">
+      <div class="feat-info fade-up">
+        <div class="feat-icon-wrap" style="background:linear-gradient(135deg,#74b9ff22,#74b9ff44);"><i class="fa-solid fa-cloud-sun"></i></div>
+        <h3 class="feat-title">7-Day Weather Forecast</h3>
+        <p class="feat-desc">View live weather conditions auto-detected from your GPS location. Current temperature, humidity, wind speed, and pressure — plus a full 7-day extended forecast. Weather data automatically feeds into other app features.</p>
+        <div class="feat-points">
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Auto-detected from your GPS — no manual entry</div>
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Hourly + 7-day extended forecast</div>
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Feeds temperature, humidity & rainfall to other features</div>
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Pull-to-refresh for real-time updates</div>
+        </div>
+        <a href="#cta" class="btn btn-primary">Try It Now</a>
+      </div>
+      <div class="feat-screenshots">
+        <div class="feat-screen-card" data-lightbox="assets/image/weather_forecast.jpeg" style="cursor:zoom-in;">
+          <img src="assets/image/weather_forecast.jpeg" alt="Weather Current" loading="lazy" />
+          <div class="feat-screen-label">Current Conditions</div>
+        </div>
+        <div class="feat-screen-card" data-lightbox="assets/image/weather_7day_forecast.jpeg" style="cursor:zoom-in;">
+          <img src="assets/image/weather_7day_forecast.jpeg" alt="7-Day Forecast" loading="lazy" />
+          <div class="feat-screen-label">7-Day Forecast</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feature 8: AI Chatbot -->
+    <div class="feature-showcase" id="feat-chatbot">
+      <div class="feat-info fade-up">
+        <div class="feat-icon-wrap" style="background:linear-gradient(135deg,#a29bfe22,#a29bfe44);"><i class="fa-solid fa-robot"></i></div>
+        <h3 class="feat-title">AI Farming Chatbot</h3>
+        <p class="feat-desc">Ask any farming question in plain language and get expert, detailed answers powered by Gemini AI with Retrieval-Augmented Generation. Chat history is saved across sessions with auto-generated conversation titles.</p>
+        <div class="feat-points">
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Powered by Google Gemini 2.5 Flash + RAG pipeline</div>
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Markdown rendering: bold, lists, tables, code blocks</div>
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Conversation history with auto-generated titles</div>
+          <div class="feat-point"><div class="feat-point-icon">&#10003;</div>Ask about diseases, fertilizers, pests, seasons & more</div>
+        </div>
+        <a href="#cta" class="btn btn-primary">Try It Now</a>
+      </div>
+      <div class="feat-screenshots">
+        <div class="feat-screen-card" data-lightbox="assets/image/chatbot_screen.jpeg" style="cursor:zoom-in;">
+          <img src="assets/image/chatbot_screen.jpeg" alt="Chatbot" loading="lazy" />
+          <div class="feat-screen-label">AI Farming Chat</div>
+        </div>
+        <div class="feat-screen-card" data-lightbox="assets/image/activity_history.jpeg" style="cursor:zoom-in;">
+          <img src="assets/image/activity_history.jpeg" alt="Activity History" loading="lazy" />
+          <div class="feat-screen-label">Conversation History</div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /container -->
+</section>
+
+<!-- ===== PROBLEM → SOLUTION ===== -->
+<section id="problems">
+  <div class="container">
+    <div class="problems-header fade-up">
+      <span class="section-badge">&#128161; Real Farming Problems, Solved</span>
+      <h2 class="section-title">Every Challenge Farmers Face,<br><span>Answered by AI</span></h2>
+      <p class="section-desc">We built Farmer's Assistance by listening to real problems farmers struggle with every day. Here's how we solve them.</p>
+    </div>
+    <div class="problems-grid">
+      <div class="problem-card fade-up">
+        <div class="problem-q"><span class="problem-q-icon">&#10067;</span><span class="problem-q-text">Can't identify crop disease just by looking at the leaves?</span></div>
+        <div class="problem-arrow">&#8595;</div>
+        <div class="problem-sol"><span class="problem-sol-icon">&#128300;</span><span class="problem-sol-text">Upload a leaf photo — AI diagnoses disease in seconds with a visual heatmap</span></div>
+      </div>
+      <div class="problem-card fade-up">
+        <div class="problem-q"><span class="problem-q-icon">&#10067;</span><span class="problem-q-text">Unsure when to irrigate or wasting water on unnecessary irrigation?</span></div>
+        <div class="problem-arrow">&#8595;</div>
+        <div class="problem-sol"><span class="problem-sol-icon">&#128167;</span><span class="problem-sol-text">Smart Irrigation predicts Yes/No based on soil moisture + live weather</span></div>
+      </div>
+      <div class="problem-card fade-up">
+        <div class="problem-q"><span class="problem-q-icon">&#10067;</span><span class="problem-q-text">Don't know which fertilizer to apply or in what ratio?</span></div>
+        <div class="problem-arrow">&#8595;</div>
+        <div class="problem-sol"><span class="problem-sol-icon">&#127807;</span><span class="problem-sol-text">NPK + pH + weather analysis gives you the precise fertilizer name</span></div>
+      </div>
+      <div class="problem-card fade-up">
+        <div class="problem-q"><span class="problem-q-icon">&#10067;</span><span class="problem-q-text">Uncertain about expected harvest — impossible to plan finances?</span></div>
+        <div class="problem-arrow">&#8595;</div>
+        <div class="problem-sol"><span class="problem-sol-icon">&#128202;</span><span class="problem-sol-text">Yield Estimation forecasts your harvest in t/ha before you even plant</span></div>
+      </div>
+      <div class="problem-card fade-up">
+        <div class="problem-q"><span class="problem-q-icon">&#10067;</span><span class="problem-q-text">Not sure what crop suits your soil and climate this season?</span></div>
+        <div class="problem-arrow">&#8595;</div>
+        <div class="problem-sol"><span class="problem-sol-icon">&#127806;</span><span class="problem-sol-text">Crop Recommendation matches your soil profile to the best crop to grow</span></div>
+      </div>
+      <div class="problem-card fade-up">
+        <div class="problem-q"><span class="problem-q-icon">&#10067;</span><span class="problem-q-text">Selling crops without knowing the fair market price?</span></div>
+        <div class="problem-arrow">&#8595;</div>
+        <div class="problem-sol"><span class="problem-sol-icon">&#128176;</span><span class="problem-sol-text">Market Price Prediction forecasts commodity prices at your nearest market</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HOW IT WORKS ===== -->
+<section id="how-it-works">
+  <div class="container">
+    <div class="how-inner">
+
+      <!-- Steps -->
+      <div>
+        <div class="fade-up">
+          <span class="section-badge">&#128161; Simple as 3 Steps</span>
+          <h2 class="section-title">Get Farming Insights<br><span>in Seconds</span></h2>
+          <p class="section-desc" style="margin-bottom:40px;">No agronomic expertise needed. Farmer's Assistance is designed for every farmer — just open, enter, and act.</p>
+        </div>
+        <div class="steps-list">
+          <div class="step-item fade-up">
+            <div class="step-num" style="background:linear-gradient(135deg,#1a7a45,#27ae60);">1</div>
+            <div class="step-content">
+              <h4>Open the App & Log In</h4>
+              <p>Sign up with email or Google in under 30 seconds. Your profile, preferences, and history sync securely via Supabase authentication.</p>
+            </div>
+          </div>
+          <div class="step-item fade-up">
+            <div class="step-num" style="background:linear-gradient(135deg,#2980b9,#3498db);">2</div>
+            <div class="step-content">
+              <h4>Choose a Feature & Enter Your Data</h4>
+              <p>Select from 7 feature cards on the home dashboard. Weather data auto-fills from your GPS so you rarely need to type numbers manually.</p>
+            </div>
+          </div>
+          <div class="step-item fade-up">
+            <div class="step-num" style="background:linear-gradient(135deg,#d4a017,#f0c040);">3</div>
+            <div class="step-content">
+              <h4>Get AI-Powered Insights Instantly</h4>
+              <p>Receive a clear recommendation, confidence score, and feature importance breakdown — all within seconds, powered by server-side ML models.</p>
+            </div>
+          </div>
+          <div class="step-item fade-up">
+            <div class="step-num" style="background:linear-gradient(135deg,#8e44ad,#a29bfe);">4</div>
+            <div class="step-content">
+              <h4>Ask the AI Chatbot Anything</h4>
+              <p>Still have questions? The Gemini-powered AI chatbot is available 24/7 to answer any farming question with expert, RAG-backed answers.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual -->
+      <div class="how-visual fade-up">
+        <div class="how-bg-circle"></div>
+        <div class="dashboard-preview">
+          <img src="assets/image/home_dashboard.jpeg" alt="App Dashboard" />
+        </div>
+        <div class="floating-card card-1">
+          <div class="fc-icon" style="background:#d4edda;">&#128200;</div>
+          <div>
+            <div class="fc-title">Yield Estimate</div>
+            <div class="fc-value">5.2 t/ha</div>
+          </div>
+        </div>
+        <div class="floating-card card-2">
+          <div class="fc-icon" style="background:#fff3cd;">&#127777;</div>
+          <div>
+            <div class="fc-title">Today's Weather</div>
+            <div class="fc-value">28°C Sunny</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== SCREENSHOTS GALLERY ===== -->
+<section id="gallery">
+  <div class="container">
+    <div class="gallery-header fade-up">
+      <span class="section-badge">&#128247; App Screenshots</span>
+      <h2 class="section-title">See Every Screen<br><span>of the App</span></h2>
+      <p class="section-desc">Clean, intuitive UI designed for farmers. Every screen is purpose-built for fast, easy use even on slow connections.</p>
+    </div>
+    <div class="gallery-slider-wrap fade-up">
+      <div class="gallery-track">
+        <div class="gallery-slide" data-lightbox="assets/image/welcome_screen.jpeg">
+          <img src="assets/image/welcome_screen.jpeg" alt="Welcome" loading="lazy" />
+          <div class="gallery-slide-label">Welcome Screen</div>
+        </div>
+        <div class="gallery-slide" data-lightbox="assets/image/login_screen.jpeg">
+          <img src="assets/image/login_screen.jpeg" alt="Login" loading="lazy" />
+          <div class="gallery-slide-label">Login</div>
+        </div>
+        <div class="gallery-slide" data-lightbox="assets/image/register_screen.jpeg">
+          <img src="assets/image/register_screen.jpeg" alt="Register" loading="lazy" />
+          <div class="gallery-slide-label">Create Account</div>
+        </div>
+        <div class="gallery-slide" data-lightbox="assets/image/home_dashboard.jpeg">
+          <img src="assets/image/home_dashboard.jpeg" alt="Dashboard" loading="lazy" />
+          <div class="gallery-slide-label">Home Dashboard</div>
+        </div>
+        <div class="gallery-slide" data-lightbox="assets/image/disease_detection_input.jpeg">
+          <img src="assets/image/disease_detection_input.jpeg" alt="Disease Input" loading="lazy" />
+          <div class="gallery-slide-label">Disease Detection</div>
+        </div>
+        <div class="gallery-slide" data-lightbox="assets/image/disease_detection_result.jpeg">
+          <img src="assets/image/disease_detection_result.jpeg" alt="Disease Result" loading="lazy" />
+          <div class="gallery-slide-label">Disease Result</div>
+        </div>
+        <div class="gallery-slide" data-lightbox="assets/image/smart_irrigation_input.jpeg">
+          <img src="assets/image/smart_irrigation_input.jpeg" alt="Irrigation" loading="lazy" />
+          <div class="gallery-slide-label">Smart Irrigation</div>
+        </div>
+        <div class="gallery-slide" data-lightbox="assets/image/smart_irrigation_result.jpeg">
+          <img src="assets/image/smart_irrigation_result.jpeg" alt="Irrigation Result" loading="lazy" />
+          <div class="gallery-slide-label">Irrigation Result</div>
+        </div>
+        <div class="gallery-slide" data-lightbox="assets/image/fertilizer_recommendation_input.jpeg">
+          <img src="assets/image/fertilizer_recommendation_input.jpeg" alt="Fertilizer" loading="lazy" />
+          <div class="gallery-slide-label">Fertilizer Input</div>
+        </div>
+        <div class="gallery-slide" data-lightbox="assets/image/fertilizer_recommendation_result.jpeg">
+          <img src="assets/image/fertilizer_recommendation_result.jpeg" alt="Fertilizer Result" loading="lazy" />
+          <div class="gallery-slide-label">Fertilizer Result</div>
+        </div>
+        <div class="gallery-slide" data-lightbox="assets/image/yield_estimate_input.jpeg">
+          <img src="assets/image/yield_estimate_input.jpeg" alt="Yield" loading="lazy" />
+          <div class="gallery-slide-label">Yield Input</div>
+        </div>
+        <div class="gallery-slide" data-lightbox="assets/image/yield_estimate_result.jpeg">
+          <img src="assets/image/yield_estimate_result.jpeg" alt="Yield Result" loading="lazy" />
+          <div class="gallery-slide-label">Yield Result</div>
+        </div>
+        <div class="gallery-slide" data-lightbox="assets/image/crop_recommendation_input.jpeg">
+          <img src="assets/image/crop_recommendation_input.jpeg" alt="Crop Rec" loading="lazy" />
+          <div class="gallery-slide-label">Crop Recommendation</div>
+        </div>
+        <div class="gallery-slide" data-lightbox="assets/image/crop_recommendation_result.jpeg">
+          <img src="assets/image/crop_recommendation_result.jpeg" alt="Crop Result" loading="lazy" />
+          <div class="gallery-slide-label">Crop Result</div>
+        </div>
+        <div class="gallery-slide" data-lightbox="assets/image/market_trends_input.jpeg">
+          <img src="assets/image/market_trends_input.jpeg" alt="Market" loading="lazy" />
+          <div class="gallery-slide-label">Market Trends</div>
+        </div>
+        <div class="gallery-slide" data-lightbox="assets/image/market_trends_result.jpeg">
+          <img src="assets/image/market_trends_result.jpeg" alt="Market Result" loading="lazy" />
+          <div class="gallery-slide-label">Market Price</div>
+        </div>
+        <div class="gallery-slide" data-lightbox="assets/image/weather_forecast.jpeg">
+          <img src="assets/image/weather_forecast.jpeg" alt="Weather" loading="lazy" />
+          <div class="gallery-slide-label">Weather Forecast</div>
+        </div>
+        <div class="gallery-slide" data-lightbox="assets/image/weather_7day_forecast.jpeg">
+          <img src="assets/image/weather_7day_forecast.jpeg" alt="7-Day" loading="lazy" />
+          <div class="gallery-slide-label">7-Day Forecast</div>
+        </div>
+        <div class="gallery-slide" data-lightbox="assets/image/chatbot_screen.jpeg">
+          <img src="assets/image/chatbot_screen.jpeg" alt="Chatbot" loading="lazy" />
+          <div class="gallery-slide-label">AI Chatbot</div>
+        </div>
+        <div class="gallery-slide" data-lightbox="assets/image/user_profile.jpeg">
+          <img src="assets/image/user_profile.jpeg" alt="Profile" loading="lazy" />
+          <div class="gallery-slide-label">User Profile</div>
+        </div>
+      </div>
+    </div>
+    <div class="gallery-controls">
+      <button class="gallery-btn gallery-prev" aria-label="Previous">&#8592;</button>
+      <button class="gallery-btn gallery-next" aria-label="Next">&#8594;</button>
+    </div>
+    <div class="gallery-dots">
+      <span class="gallery-dot active"></span>
+      <span class="gallery-dot"></span>
+      <span class="gallery-dot"></span>
+      <span class="gallery-dot"></span>
+      <span class="gallery-dot"></span>
+      <span class="gallery-dot"></span>
+      <span class="gallery-dot"></span>
+      <span class="gallery-dot"></span>
+      <span class="gallery-dot"></span>
+      <span class="gallery-dot"></span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TECHNOLOGY ===== -->
+<section id="tech">
+  <div class="container">
+    <div class="tech-header fade-up">
+      <span class="section-badge">&#9889; Powered By</span>
+      <h2 class="section-title">Enterprise-Grade<br><span>Technology Stack</span></h2>
+      <p class="section-desc">Built on proven, production-ready frameworks so Farmer's Assistance is fast, secure, and always available.</p>
+    </div>
+    <div class="tech-grid fade-up">
+      <div class="tech-item">
+        <div class="tech-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+        <div class="tech-name">Flutter</div>
+        <div class="tech-role">Cross-platform UI</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon"><i class="fa-solid fa-code"></i></div>
+        <div class="tech-name">Dart 3.x</div>
+        <div class="tech-role">App Language</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon"><i class="fa-solid fa-bolt"></i></div>
+        <div class="tech-name">FastAPI</div>
+        <div class="tech-role">Backend API</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon"><i class="fa-solid fa-robot"></i></div>
+        <div class="tech-name">Gemini AI</div>
+        <div class="tech-role">AI Chatbot</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon"><i class="fa-solid fa-brain"></i></div>
+        <div class="tech-name">TensorFlow</div>
+        <div class="tech-role">Disease Model</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <div class="tech-name">scikit-learn</div>
+        <div class="tech-role">ML Predictions</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon"><i class="fa-solid fa-database"></i></div>
+        <div class="tech-name">Supabase</div>
+        <div class="tech-role">Auth & Database</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon"><i class="fa-solid fa-industry"></i></div>
+        <div class="tech-name">XGBoost</div>
+        <div class="tech-role">Price Prediction</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon"><i class="fa-solid fa-layer-group"></i></div>
+        <div class="tech-name">BLoC + Riverpod</div>
+        <div class="tech-role">State Management</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon"><i class="fa-solid fa-route"></i></div>
+        <div class="tech-name">GoRouter</div>
+        <div class="tech-role">Deep Linking</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon"><i class="fa-solid fa-location-dot"></i></div>
+        <div class="tech-name">Geolocator</div>
+        <div class="tech-role">GPS & Weather</div>
+      </div>
+      <div class="tech-item">
+        <div class="tech-icon"><i class="fa-solid fa-sitemap"></i></div>
+        <div class="tech-name">Clean Architecture</div>
+        <div class="tech-role">Design Pattern</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section id="cta">
+  <div class="container">
+    <div class="cta-inner">
+      <div>
+        <div class="section-badge" style="background:rgba(255,255,255,0.12);color:white;border-color:rgba(255,255,255,0.25);">
+          &#128241; Free Download
+        </div>
+        <h2 class="cta-title">Start Farming Smarter<br>Today — It's Free</h2>
+        <p class="cta-desc">Join thousands of farmers who are already using AI to grow more, waste less, and earn more. Download Farmer's Assistance and get 8 powerful tools in one app.</p>
+      </div>
+      <div class="cta-app-links">
+        <div class="store-btn">
+          <div class="store-btn-icon"><i class="fa-brands fa-google-play"></i></div>
+          <div>
+            <div class="store-btn-sub">GET IT ON</div>
+            <div class="store-btn-name">Google Play</div>
+          </div>
+        </div>
+        <div class="store-btn">
+          <div class="store-btn-icon"><i class="fa-brands fa-apple"></i></div>
+          <div>
+            <div class="store-btn-sub">DOWNLOAD ON THE</div>
+            <div class="store-btn-name">App Store</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo-wrap">
+          <img src="assets/app_icon/app_icon.png" alt="Logo" class="footer-logo" />
+          <span class="footer-brand-name">Farmer's Assistance</span>
+        </div>
+        <p class="footer-brand-desc">An AI-powered mobile assistant that helps farmers make smarter decisions — from disease detection to yield forecasting, irrigation planning, and live market prices.</p>
+        <div class="footer-social">
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" class="social-link" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Features</div>
+        <div class="footer-links">
+          <a href="#features">Disease Detection</a>
+          <a href="#features">Smart Irrigation</a>
+          <a href="#features">Fertilizer Tips</a>
+          <a href="#features">Yield Estimation</a>
+          <a href="#features">Crop Recommendation</a>
+          <a href="#features">Market Trends</a>
+          <a href="#features">Weather Forecast</a>
+          <a href="#features">AI Chatbot</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">App</div>
+        <div class="footer-links">
+          <a href="#how-it-works">How It Works</a>
+          <a href="#gallery">Screenshots</a>
+          <a href="#tech">Technology</a>
+          <a href="#cta">Download</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title">Support</div>
+        <div class="footer-links">
+          <a href="#">Help Center</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Report a Bug</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">&copy; 2026 Farmer's Assistance. All rights reserved.</div>
+      <div class="footer-made">Made with <span>&#9829;</span> for farmers everywhere &nbsp;&middot;&nbsp; Built with Flutter</div>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="lightbox-overlay" id="lightbox">
+  <button class="lightbox-close" id="lightbox-close">&#10005;</button>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="Screenshot Preview" />
+</div>
+
+<!-- ===== BACK TO TOP ===== -->
+<button class="back-top" id="back-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<script src="src/js/main.js"></script>
+</body>
+</html>
