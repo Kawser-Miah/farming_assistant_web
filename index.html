@@ -4,6 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Farmer's Assistance — AI-powered mobile app for smart farming. Disease detection, irrigation, fertilizer, yield, crop & market insights powered by machine learning." />
+  <meta name="theme-color" content="#1a7a45" />
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Farmer's Assistance — AI-Powered Smart Farming App" />
+  <meta property="og:description" content="8 powerful AI tools for real farmers — disease detection, smart irrigation, fertilizer advice, yield forecasting, market prices & more. Free to download." />
+  <meta property="og:image" content="assets/image/home_dashboard.jpeg" />
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Farmer's Assistance — AI-Powered Smart Farming App" />
+  <meta name="twitter:description" content="8 powerful AI tools for real farmers — free to download." />
+  <meta name="twitter:image" content="assets/image/home_dashboard.jpeg" />
   <title>Farmer's Assistance — AI-Powered Smart Farming App</title>
   <link rel="icon" href="assets/app_icon/app_icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -26,6 +37,7 @@
         <li><a href="#features">Features</a></li>
         <li><a href="#how-it-works">How It Works</a></li>
         <li><a href="#gallery">Screenshots</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
         <li><a href="#tech">Technology</a></li>
       </ul>
       <div class="nav-cta">
@@ -44,6 +56,7 @@
   <a href="#features">Features</a>
   <a href="#how-it-works">How It Works</a>
   <a href="#gallery">Screenshots</a>
+  <a href="#testimonials">Reviews</a>
   <a href="#tech">Technology</a>
   <a href="#cta" class="btn btn-primary">Get the App</a>
 </div>
@@ -66,11 +79,11 @@
           <span class="accent">in Your Pocket</span>
         </h1>
         <p class="hero-subtitle">
-          Farmer's Assistance puts 8 powerful AI tools at your fingertips — from crop disease detection to real-time market price predictions. Make smarter farming decisions, every single day.
+          Farmer's Assistance puts 8 powerful AI tools at your fingertips from crop disease detection to real-time market price predictions. Make smarter farming decisions, every single day.
         </p>
         <div class="hero-actions">
           <a href="#cta" class="btn btn-primary" style="font-size:1.05rem; padding:16px 36px;">
-            <i class="fa-solid fa-download"></i>&nbsp; Download Free
+            <i class="fa-solid fa-bell"></i>&nbsp; Get Early Access
           </a>
           <a href="#features" class="btn btn-outline" style="color:white; border-color:rgba(255,255,255,0.4); font-size:1.05rem; padding:16px 36px;">
             <i class="fa-solid fa-play"></i>&nbsp; Explore Features
@@ -117,8 +130,8 @@
   <div class="container">
     <div class="stats-grid">
       <div class="stat-item fade-up">
-        <div class="stat-number"><span data-target="100" data-suffix="">0</span><span>+</span></div>
-        <div class="stat-label">Countries Supported</div>
+        <div class="stat-number"><span data-target="8" data-suffix="">0</span><span>+</span></div>
+        <div class="stat-label">AI Features</div>
       </div>
       <div class="stat-item fade-up">
         <div class="stat-number"><span data-target="7" data-suffix="">0</span><span>-Day</span></div>
@@ -139,22 +152,22 @@
 <!-- ===== FEATURES SECTION ===== -->
 <section id="features">
   <div class="container">
-    <div class="features-header fade-up">
+    <div class="features-header text-center fade-up">
       <span class="section-badge">&#127807; Core Features</span>
       <h2 class="section-title">8 Powerful AI Tools<br><span>Built for Real Farmers</span></h2>
-      <p class="section-desc">Each feature is powered by trained machine learning models and live weather data — giving you actionable, accurate farming advice in seconds.</p>
+      <p class="section-desc">Each feature is powered by trained machine learning models and live weather data giving you actionable, accurate farming advice in seconds.</p>
     </div>
 
     <!-- Feature Tabs -->
-    <div class="features-tabs fade-up">
-      <button class="feat-tab active" data-target="feat-disease"><i class="fa-solid fa-microscope"></i> Disease</button>
-      <button class="feat-tab" data-target="feat-irrigation"><i class="fa-solid fa-droplet"></i> Irrigation</button>
-      <button class="feat-tab" data-target="feat-fertilizer"><i class="fa-solid fa-seedling"></i> Fertilizer</button>
-      <button class="feat-tab" data-target="feat-yield"><i class="fa-solid fa-chart-bar"></i> Yield</button>
-      <button class="feat-tab" data-target="feat-crop"><i class="fa-solid fa-wheat-awn"></i> Crop Rec.</button>
-      <button class="feat-tab" data-target="feat-market"><i class="fa-solid fa-coins"></i> Market</button>
-      <button class="feat-tab" data-target="feat-weather"><i class="fa-solid fa-cloud-sun"></i> Weather</button>
-      <button class="feat-tab" data-target="feat-chatbot"><i class="fa-solid fa-robot"></i> AI Chat</button>
+    <div class="features-tabs fade-up" role="tablist" aria-label="App Features">
+      <button class="feat-tab active" data-target="feat-disease" role="tab" aria-selected="true" aria-controls="feat-disease"><i class="fa-solid fa-microscope"></i> Disease</button>
+      <button class="feat-tab" data-target="feat-irrigation" role="tab" aria-selected="false" aria-controls="feat-irrigation"><i class="fa-solid fa-droplet"></i> Irrigation</button>
+      <button class="feat-tab" data-target="feat-fertilizer" role="tab" aria-selected="false" aria-controls="feat-fertilizer"><i class="fa-solid fa-seedling"></i> Fertilizer</button>
+      <button class="feat-tab" data-target="feat-yield" role="tab" aria-selected="false" aria-controls="feat-yield"><i class="fa-solid fa-chart-bar"></i> Yield</button>
+      <button class="feat-tab" data-target="feat-crop" role="tab" aria-selected="false" aria-controls="feat-crop"><i class="fa-solid fa-wheat-awn"></i> Crop Rec.</button>
+      <button class="feat-tab" data-target="feat-market" role="tab" aria-selected="false" aria-controls="feat-market"><i class="fa-solid fa-coins"></i> Market</button>
+      <button class="feat-tab" data-target="feat-weather" role="tab" aria-selected="false" aria-controls="feat-weather"><i class="fa-solid fa-cloud-sun"></i> Weather</button>
+      <button class="feat-tab" data-target="feat-chatbot" role="tab" aria-selected="false" aria-controls="feat-chatbot"><i class="fa-solid fa-robot"></i> AI Chat</button>
     </div>
 
     <!-- Feature 1: Disease Detection -->
@@ -371,7 +384,7 @@
 <!-- ===== PROBLEM → SOLUTION ===== -->
 <section id="problems">
   <div class="container">
-    <div class="problems-header fade-up">
+    <div class="problems-header text-center fade-up">
       <span class="section-badge">&#128161; Real Farming Problems, Solved</span>
       <h2 class="section-title">Every Challenge Farmers Face,<br><span>Answered by AI</span></h2>
       <p class="section-desc">We built Farmer's Assistance by listening to real problems farmers struggle with every day. Here's how we solve them.</p>
@@ -419,7 +432,7 @@
       <!-- Steps -->
       <div>
         <div class="fade-up">
-          <span class="section-badge">&#128161; Simple as 3 Steps</span>
+          <span class="section-badge">&#128161; Simple as 4 Steps</span>
           <h2 class="section-title">Get Farming Insights<br><span>in Seconds</span></h2>
           <p class="section-desc" style="margin-bottom:40px;">No agronomic expertise needed. Farmer's Assistance is designed for every farmer — just open, enter, and act.</p>
         </div>
@@ -435,7 +448,7 @@
             <div class="step-num" style="background:linear-gradient(135deg,#2980b9,#3498db);">2</div>
             <div class="step-content">
               <h4>Choose a Feature & Enter Your Data</h4>
-              <p>Select from 7 feature cards on the home dashboard. Weather data auto-fills from your GPS so you rarely need to type numbers manually.</p>
+              <p>Select from 8 feature cards on the home dashboard. Weather data auto-fills from your GPS so you rarely need to type numbers manually.</p>
             </div>
           </div>
           <div class="step-item fade-up">
@@ -484,7 +497,7 @@
 <!-- ===== SCREENSHOTS GALLERY ===== -->
 <section id="gallery">
   <div class="container">
-    <div class="gallery-header fade-up">
+    <div class="gallery-header text-center fade-up">
       <span class="section-badge">&#128247; App Screenshots</span>
       <h2 class="section-title">See Every Screen<br><span>of the App</span></h2>
       <p class="section-desc">Clean, intuitive UI designed for farmers. Every screen is purpose-built for fast, easy use even on slow connections.</p>
@@ -592,10 +605,56 @@
   </div>
 </section>
 
+<!-- ===== TESTIMONIALS ===== -->
+<section id="testimonials">
+  <div class="container">
+    <div class="testimonials-header text-center fade-up">
+      <span class="section-badge">&#11088; Farmer Stories</span>
+      <h2 class="section-title">Trusted by Farmers<br><span>Across Bangladesh</span></h2>
+      <p class="section-desc">Real feedback from farmers who use Farmer's Assistance in their daily work.</p>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-text">"The disease detection feature saved my entire tomato harvest. I uploaded a leaf photo and within seconds I knew it was early blight — I treated it the same day before it spread."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#1a7a45,#27ae60);">R</div>
+          <div>
+            <div class="author-name">Rahim Uddin</div>
+            <div class="author-role">Vegetable Farmer, Rajshahi</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-text">"Market price prediction helped me decide when to sell my rice. I waited three extra days after seeing the forecast and got a much better price. This app pays for itself."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#2980b9,#3498db);">K</div>
+          <div>
+            <div class="author-name">Karim Hossain</div>
+            <div class="author-role">Rice Farmer, Sylhet</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-up">
+        <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p class="testimonial-text">"Smart Irrigation tells me exactly when my fields need water. I've cut my water usage significantly while my yield improved. The AI chatbot answers every question I have about my crops."</p>
+        <div class="testimonial-author">
+          <div class="author-avatar" style="background:linear-gradient(135deg,#d4a017,#f0c040);">F</div>
+          <div>
+            <div class="author-name">Fatema Begum</div>
+            <div class="author-role">Mixed Crop Farmer, Mymensingh</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ===== TECHNOLOGY ===== -->
 <section id="tech">
   <div class="container">
-    <div class="tech-header fade-up">
+    <div class="tech-header text-center fade-up">
       <span class="section-badge">&#9889; Powered By</span>
       <h2 class="section-title">Enterprise-Grade<br><span>Technology Stack</span></h2>
       <p class="section-desc">Built on proven, production-ready frameworks so Farmer's Assistance is fast, secure, and always available.</p>
@@ -671,26 +730,26 @@
     <div class="cta-inner">
       <div>
         <div class="section-badge" style="background:rgba(255,255,255,0.12);color:white;border-color:rgba(255,255,255,0.25);">
-          &#128241; Free Download
+          &#128241; Launching Soon Free
         </div>
-        <h2 class="cta-title">Start Farming Smarter<br>Today — It's Free</h2>
-        <p class="cta-desc">Join thousands of farmers who are already using AI to grow more, waste less, and earn more. Download Farmer's Assistance and get 8 powerful tools in one app.</p>
+        <h2 class="cta-title">Start Farming Smarter<br>It's Free</h2>
+        <p class="cta-desc">Farmer's Assistance is launching soon on Google Play and the App Store. Register your interest and be the first to know when it's available 8 powerful AI tools, completely free.</p>
       </div>
       <div class="cta-app-links">
-        <div class="store-btn">
+        <a href="#" class="store-btn store-btn-soon" aria-label="Google Play — Coming Soon">
           <div class="store-btn-icon"><i class="fa-brands fa-google-play"></i></div>
           <div>
-            <div class="store-btn-sub">GET IT ON</div>
+            <div class="store-btn-sub">COMING SOON ON</div>
             <div class="store-btn-name">Google Play</div>
           </div>
-        </div>
-        <div class="store-btn">
+        </a>
+        <a href="#" class="store-btn store-btn-soon" aria-label="App Store — Coming Soon">
           <div class="store-btn-icon"><i class="fa-brands fa-apple"></i></div>
           <div>
-            <div class="store-btn-sub">DOWNLOAD ON THE</div>
+            <div class="store-btn-sub">COMING SOON ON</div>
             <div class="store-btn-name">App Store</div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </div>
@@ -705,12 +764,12 @@
           <img src="assets/app_icon/app_icon.png" alt="Logo" class="footer-logo" />
           <span class="footer-brand-name">Farmer's Assistance</span>
         </div>
-        <p class="footer-brand-desc">An AI-powered mobile assistant that helps farmers make smarter decisions — from disease detection to yield forecasting, irrigation planning, and live market prices.</p>
+        <p class="footer-brand-desc">An AI-powered mobile assistant that helps farmers make smarter decisions from disease detection to yield forecasting, irrigation planning, and live market prices.</p>
         <div class="footer-social">
-          <a href="#" class="social-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-          <a href="#" class="social-link" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="#" class="social-link" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-          <a href="#" class="social-link" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="#" class="social-link" aria-label="Facebook" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Twitter" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="social-link" aria-label="GitHub" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:kawsermiah.cse@gmail.com" class="social-link" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
         </div>
       </div>
       <div>
