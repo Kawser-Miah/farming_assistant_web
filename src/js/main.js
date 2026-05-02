@@ -89,9 +89,10 @@ const showcases = document.querySelectorAll('.feature-showcase');
 tabs.forEach(tab => {
   tab.addEventListener('click', () => {
     const target = tab.dataset.target;
-    tabs.forEach(t => t.classList.remove('active'));
+    tabs.forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected', 'false'); });
     showcases.forEach(s => s.classList.remove('active'));
     tab.classList.add('active');
+    tab.setAttribute('aria-selected', 'true');
     document.getElementById(target)?.classList.add('active');
   });
 });
@@ -99,9 +100,21 @@ tabs.forEach(tab => {
 // ===== GALLERY SLIDER =====
 const track = document.querySelector('.gallery-track');
 const slides = document.querySelectorAll('.gallery-slide');
-const dots = document.querySelectorAll('.gallery-dot');
+const dotsContainer = document.querySelector('.gallery-dots');
 let currentSlide = 0;
 let autoSlide;
+
+// Generate dots dynamically based on slide count
+if (dotsContainer && slides.length > 0) {
+  dotsContainer.innerHTML = '';
+  const dotCount = Math.ceil(slides.length / 2);
+  for (let i = 0; i < dotCount; i++) {
+    const dot = document.createElement('span');
+    dot.className = 'gallery-dot' + (i === 0 ? ' active' : '');
+    dotsContainer.appendChild(dot);
+  }
+}
+const dots = document.querySelectorAll('.gallery-dot');
 
 const getSlideWidth = () => {
   if (!slides[0]) return 220;
