@@ -701,6 +701,8 @@ ul { list-style: none; }
 .store-btn-icon { font-size: 1.8rem; }
 .store-btn-sub { font-size: 0.7rem; opacity: 0.7; letter-spacing: 0.5px; }
 .store-btn-name { font-size: 0.95rem; font-weight: 700; margin-top: 1px; }
+.store-btn-soon { opacity: 0.75; cursor: default; pointer-events: none; }
+.store-btn-soon:hover { transform: none; background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); }
 
 /* ===== FOOTER ===== */
 footer {
